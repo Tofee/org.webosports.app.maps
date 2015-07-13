@@ -4,7 +4,7 @@ enyo.kind({
 	},
 	components: [
 		{kind: "Signals", onload: "load", onunload: "cleanup"},
-		{kind: "Signals", name: "keyDownSignal", onkeydown: "handleKeyDown"},
+		{kind: "Signals", name: "keyDownSignal", onkeyup: "handleKeyDown"},
 		{kind: "enyo.Signals", onbackbutton: "handleBackGesture"},
 		{name: "general", components: [
 		{kind: "FittableRows", name: "layout", classes: "zoom-pre3", components: [
